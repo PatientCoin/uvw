@@ -64,7 +64,6 @@ endfunction()
 add_library(uvw-static STATIC)
 add_library(uvw::uvw-static ALIAS uvw-static)
 target_link_libraries(uvw-static PUBLIC uv::uv-static)
-set_target_properties(uvw-static PROPERTIES EXCLUDE_FROM_DEFAULT_BUILD 1)
 add_uvw_library(uvw-static)
 
 #
